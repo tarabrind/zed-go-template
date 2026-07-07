@@ -1,0 +1,14 @@
+id = "go-template-embedded"
+name = "Go Template (Embedded Languages)"
+version = "0.0.1"
+schema_version = 1
+description = "Go template syntax highlighting with embedded-language injection selected by file extension (YAML, Shell etc)"
+authors = ["Denis Tarabrin <tdencrash@gmail.com>"]
+themes = []
+icon_themes = []
+languages = ["languages/gotmpl-yaml", "languages/gotmpl-shell", "languages/gotmpl-html"]
+capabilities = []
+
+[grammars.gotmpl]
+repository = "https://github.com/ngalaiko/tree-sitter-go-template"
+rev = "aa71f63de226c5592dfbfc1f29949522d7c95fac"

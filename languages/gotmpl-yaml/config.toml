@@ -1,0 +1,10 @@
+name = "YAML [Go Template]"
+grammar = "gotmpl"
+path_suffixes = ["yaml.gotmpl", "yml.gotmpl", "yaml.tpl", "yml.tpl", "werf.inc.yaml", "werf.inc.yml", "werf.yaml", "werf.yml"]
+line_comments = ["# "]
+block_comment = ["{{/* ", " */}}"]
+brackets = [
+    { start = "{{", end = "}}", close = true, newline = false },
+    { start = "{{-", end = "-}}", close = true, newline = false },
+    { start = "(", end = ")", close = true, newline = false },
+]

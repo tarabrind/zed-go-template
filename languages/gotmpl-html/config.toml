@@ -1,0 +1,9 @@
+name = "HTML [Go Template]"
+grammar = "gotmpl"
+path_suffixes = ["html.gotmpl", "htm.gotmpl", "html.tpl", "htm.tpl", "gohtml"]
+block_comment = ["{{/* ", " */}}"]
+brackets = [
+    { start = "{{", end = "}}", close = true, newline = false },
+    { start = "{{-", end = "-}}", close = true, newline = false },
+    { start = "(", end = ")", close = true, newline = false },
+]
