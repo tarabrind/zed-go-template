@@ -9,14 +9,14 @@ embedded language, chosen per file type:
 | Language                     | File suffixes                                           | Embedded language |
 | ---------------------------- | ------------------------------------------------------- | ----------------- |
 | `YAML [Go Template]`         | `.yaml`/`.yml` + `.gotmpl`, `.tmpl`, `.tpl`             | YAML              |
-| `werf [Go Template]`         | `werf.yaml`, `werf.inc.yaml` (and the `.yml` spellings) | YAML + Bash       |
+| `Werf [Go Template]`         | `werf.yaml`, `werf.inc.yaml` (and the `.yml` spellings) | YAML + Bash       |
 | `Shell Script [Go Template]` | `.sh`/`.bash` + `.gotmpl`, `.tmpl`, `.tpl`              | Bash              |
 | `HTML [Go Template]`         | `.html`/`.htm` + `.gotmpl`, `.tmpl`, `.tpl`; `.gohtml`  | HTML              |
 
 ## Bash inside werf shell stages
 
-`werf [Go Template]` is a YAML template language with one addition: its YAML body
-is handled by an internal language (`werf YAML Body`, hidden from the language
+`Werf [Go Template]` is a YAML template language with one addition: its YAML body
+is handled by an internal language (`Werf YAML Body`, hidden from the language
 picker) that injects Bash into werf shell stages:
 
 ```yaml
@@ -37,7 +37,7 @@ using Zed's built-in YAML language.
 
 ## Use as a Helm / werf alternative
 
-The `YAML [Go Template]` and `werf [Go Template]` languages work well for Helm
+The `YAML [Go Template]` and `Werf [Go Template]` languages work well for Helm
 chart templates, `werf.yaml` / `werf.inc.yaml`, and other Go-templated YAML
 files. If you don't need a Helm-specific language server, you can use this
 extension instead of a dedicated Helm extension and additionally get correct

@@ -1,4 +1,4 @@
-name = "werf [Go Template]"
+name = "Werf [Go Template]"
 grammar = "gotmpl"
 path_suffixes = [
     "werf.yaml",
