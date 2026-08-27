@@ -5,7 +5,9 @@
     (field_identifier)
 ] @property
 
-(variable) @variable
+; Only the name is captured here; the `$` sigil is painted separately below.
+(variable
+  name: (identifier) @variable)
 
 ; Function calls
 
@@ -20,6 +22,7 @@
 
 "|" @operator
 ":=" @operator
+"=" @operator
 
 ; Builtin functions
 
@@ -31,12 +34,18 @@
 "." @punctuation.delimiter
 "," @punctuation.delimiter
 
+; The `$` sigil is painted with the variable name rather than with the other
+; delimiters, so `$name` reads as one token.
+"$" @punctuation.special
+
 "{{" @punctuation.bracket
 "}}" @punctuation.bracket
 "{{-" @punctuation.bracket
 "-}}" @punctuation.bracket
-")" @punctuation.bracket
-"(" @punctuation.bracket
+; Parentheses are grouping inside an action, not template delimiters, so they
+; get the same accent colour as the `$` sigil.
+")" @punctuation.special
+"(" @punctuation.special
 
 ; Keywords
 

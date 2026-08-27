@@ -1,6 +1,6 @@
 id = "go-template-embedded"
 name = "Go Template (Embedded Languages)"
-version = "0.0.2"
+version = "0.0.3"
 schema_version = 1
 description = "Go template syntax highlighting with embedded-language injection selected by file extension (Werf, YAML, Shell, HTML), including Bash inside werf shell stages"
 authors = ["Denis Tarabrin <tdencrash@gmail.com>"]
