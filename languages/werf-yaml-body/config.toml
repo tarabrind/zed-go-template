@@ -1,0 +1,8 @@
+name = "werf YAML Body"
+grammar = "yaml"
+# This language only exists as an injection target for `werf [Go Template]`,
+# so it is not bound to any file type and is hidden from the language picker.
+hidden = true
+path_suffixes = []
+line_comments = ["# "]
+tab_size = 2

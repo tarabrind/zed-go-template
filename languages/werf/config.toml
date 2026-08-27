@@ -1,0 +1,16 @@
+name = "werf [Go Template]"
+grammar = "gotmpl"
+path_suffixes = [
+    "werf.yaml",
+    "werf.yml",
+    "werf.inc.yaml",
+    "werf.inc.yml",
+]
+line_comments = ["# "]
+block_comment = ["{{/* ", " */}}"]
+tab_size = 2
+brackets = [
+    { start = "{{", end = "}}", close = true, newline = false },
+    { start = "{{-", end = "-}}", close = true, newline = false },
+    { start = "(", end = ")", close = true, newline = false },
+]

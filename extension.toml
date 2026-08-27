@@ -1,14 +1,26 @@
 id = "go-template-embedded"
 name = "Go Template (Embedded Languages)"
-version = "0.0.1"
+version = "0.0.2"
 schema_version = 1
-description = "Go template syntax highlighting with embedded-language injection selected by file extension (YAML, Shell etc)"
+description = "Go template syntax highlighting with embedded-language injection selected by file extension (Werf, YAML, Shell, HTML), including Bash inside werf shell stages"
 authors = ["Denis Tarabrin <tdencrash@gmail.com>"]
 themes = []
 icon_themes = []
-languages = ["languages/gotmpl-yaml", "languages/gotmpl-shell", "languages/gotmpl-html"]
+languages = [
+    "languages/gotmpl-yaml",
+    "languages/werf",
+    "languages/werf-yaml-body",
+    "languages/gotmpl-shell",
+    "languages/gotmpl-html",
+]
 capabilities = []
 
 [grammars.gotmpl]
 repository = "https://github.com/ngalaiko/tree-sitter-go-template"
 rev = "aa71f63de226c5592dfbfc1f29949522d7c95fac"
+
+# Used only by `werf YAML Body`. If the Zed build already ships a native `yaml`
+# grammar, that one wins and this one is not registered.
+[grammars.yaml]
+repository = "https://github.com/zed-industries/tree-sitter-yaml"
+rev = "baff0b51c64ef6a1fb1f8390f3ad6015b83ec13a"

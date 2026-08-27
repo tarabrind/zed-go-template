@@ -1,6 +1,13 @@
 name = "Shell Script [Go Template]"
 grammar = "gotmpl"
-path_suffixes = ["sh.gotmpl", "bash.gotmpl", "sh.tpl", "bash.tpl"]
+path_suffixes = [
+    "sh.gotmpl",
+    "bash.gotmpl",
+    "sh.tmpl",
+    "bash.tmpl",
+    "sh.tpl",
+    "bash.tpl",
+]
 line_comments = ["# "]
 block_comment = ["{{/* ", " */}}"]
 brackets = [
