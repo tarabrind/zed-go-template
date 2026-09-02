@@ -1,4 +1,6 @@
-name = "HTML [Go Template]"
+# The language name doubles as the markdown fence info string (case-insensitive):
+# ```gotmpl-html
+name = "GoTmpl-HTML"
 grammar = "gotmpl"
 path_suffixes = [
     "html.gotmpl",

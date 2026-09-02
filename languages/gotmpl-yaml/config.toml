@@ -1,4 +1,6 @@
-name = "YAML [Go Template]"
+# The language name doubles as the markdown fence info string (case-insensitive):
+# ```gotmpl-yaml
+name = "GoTmpl-YAML"
 grammar = "gotmpl"
 path_suffixes = [
     "yaml.gotmpl",

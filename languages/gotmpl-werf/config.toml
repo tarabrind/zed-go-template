@@ -1,4 +1,6 @@
-name = "Werf [Go Template]"
+# The language name doubles as the markdown fence info string (case-insensitive):
+# ```gotmpl-werf
+name = "GoTmpl-Werf"
 grammar = "gotmpl"
 path_suffixes = [
     "werf.yaml",

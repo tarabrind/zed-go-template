@@ -1,6 +1,6 @@
-name = "Werf YAML Body"
+name = "GoTmpl-Werf-Body"
 grammar = "yaml"
-# This language only exists as an injection target for `Werf [Go Template]`,
+# This language only exists as an injection target for `GoTmpl-Werf`,
 # so it is not bound to any file type and is hidden from the language picker.
 hidden = true
 path_suffixes = []

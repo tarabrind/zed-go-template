@@ -1,4 +1,6 @@
-name = "Shell Script [Go Template]"
+# The language name doubles as the markdown fence info string (case-insensitive):
+# ```gotmpl-shell
+name = "GoTmpl-Shell"
 grammar = "gotmpl"
 path_suffixes = [
     "sh.gotmpl",
