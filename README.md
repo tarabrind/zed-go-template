@@ -39,8 +39,8 @@ shell:
         bar
 ```
 
-Only sequence items under `shell:` → `beforeInstall` / `install` /
-`beforeSetup` / `setup` are treated as Bash. Lists such as `mount:`, `import:`
+Only sequence items under a shell stage key (`beforeInstall`, `install`,
+`beforeSetup`, `setup`) are treated as Bash. Lists such as `mount:`, `import:`
 or `secrets:` stay plain YAML.
 
 Other Go-templated YAML (`GoTmpl-YAML`) is untouched by this and keeps
